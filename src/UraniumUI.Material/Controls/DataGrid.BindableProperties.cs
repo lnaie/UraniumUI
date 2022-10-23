@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.ObjectModel;
 
 namespace UraniumUI.Material.Controls;
+
 public partial class DataGrid
 {
     public IList ItemsSource { get => (IList)GetValue(ItemsSourceProperty); set => SetValue(ItemsSourceProperty, value); }

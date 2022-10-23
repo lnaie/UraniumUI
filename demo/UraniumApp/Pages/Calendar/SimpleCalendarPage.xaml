@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:material="clr-namespace:UraniumUI.Material.Controls;assembly=UraniumUI.Material"
+             xmlns:local="clr-namespace:UraniumApp.Pages.Calendar"
+             x:Class="UraniumApp.Pages.Calendar.SimpleCalendarPage"
+             Title="SimpleCalendarPage">
+    <ContentPage.BindingContext>
+        <!--<local:SimpleDataGridPageViewModel />-->
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <material:CalendarView 
+                    HorizontalOptions="StartAndExpand"
+                    BackgroundColor="Aqua"
+                    Margin="20"
+                    Padding="0"
+                    />
+                <Grid
+                    Margin="10"
+                    Padding="0"
+                    RowSpacing="10"
+                    ColumnSpacing="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Row="0" Grid.Column="0" Text="S"></Label>
+                    <Label Grid.Row="0" Grid.Column="1" Text="M"></Label>
+                    <Label Grid.Row="0" Grid.Column="2" Text="T"></Label>
+                    <Label Grid.Row="0" Grid.Column="3" Text="W"></Label>
+                    <Label Grid.Row="0" Grid.Column="4" Text="T"></Label>
+                    <Label Grid.Row="0" Grid.Column="5" Text="F"></Label>
+                    <Label Grid.Row="0" Grid.Column="6" Text="S"></Label>
+
+                    <Label Grid.Row="1" Grid.Column="0" Text="25"></Label>
+                    <Label Grid.Row="1" Grid.Column="1" Text="26"></Label>
+                    <Label Grid.Row="1" Grid.Column="2" Text="27"></Label>
+                    <Label Grid.Row="1" Grid.Column="3" Text="28"></Label>
+                    <Label Grid.Row="1" Grid.Column="4" Text="29"></Label>
+                    <Label Grid.Row="1" Grid.Column="5" Text="30"></Label>
+                    <Label Grid.Row="1" Grid.Column="6" Text="1"></Label>
+
+                    <Label Grid.Row="2" Grid.Column="0" Text="2"></Label>
+                    <Label Grid.Row="2" Grid.Column="1" Text="3"></Label>
+                    <Label Grid.Row="2" Grid.Column="2" Text="4"></Label>
+                    <Label Grid.Row="2" Grid.Column="3" Text="5"></Label>
+                    <Label Grid.Row="2" Grid.Column="4" Text="6"></Label>
+                    <Label Grid.Row="2" Grid.Column="5" Text="7"></Label>
+                    <Label Grid.Row="2" Grid.Column="6" Text="8"></Label>
+
+                    <Label Grid.Row="3" Grid.Column="0" Text="9"></Label>
+                    <Label Grid.Row="3" Grid.Column="1" Text="10"></Label>
+                    <Label Grid.Row="3" Grid.Column="2" Text="11"></Label>
+                    <Label Grid.Row="3" Grid.Column="3" Text="12"></Label>
+                    <Label Grid.Row="3" Grid.Column="4" Text="13"></Label>
+                    <Label Grid.Row="3" Grid.Column="5" Text="14"></Label>
+                    <Label Grid.Row="3" Grid.Column="6" Text="15"></Label>
+
+                    <Label Grid.Row="4" Grid.Column="0" Text="16"></Label>
+                    <Label Grid.Row="4" Grid.Column="1" Text="17"></Label>
+                    <Label Grid.Row="4" Grid.Column="2" Text="18"></Label>
+                    <Label Grid.Row="4" Grid.Column="3" Text="19"></Label>
+                    <Label Grid.Row="4" Grid.Column="4" Text="20"></Label>
+                    <Label Grid.Row="4" Grid.Column="5" Text="21"></Label>
+                    <Label Grid.Row="4" Grid.Column="6" Text="22"></Label>
+
+                    <Label Grid.Row="5" Grid.Column="0" Text="23"></Label>
+                    <Label Grid.Row="5" Grid.Column="1" Text="24"></Label>
+                    <Label Grid.Row="5" Grid.Column="2" Text="25"></Label>
+                    <Label Grid.Row="5" Grid.Column="3" Text="26"></Label>
+                    <Label Grid.Row="5" Grid.Column="4" Text="27"></Label>
+                    <Label Grid.Row="5" Grid.Column="5" Text="28"></Label>
+                    <Label Grid.Row="5" Grid.Column="6" Text="29"></Label>
+
+                    <Label Grid.Row="6" Grid.Column="0" Text="30"></Label>
+                    <Label Grid.Row="6" Grid.Column="1" Text="31"></Label>
+                    <Label Grid.Row="6" Grid.Column="2" Text="1"></Label>
+                    <Label Grid.Row="6" Grid.Column="3" Text="2"></Label>
+                    <Label Grid.Row="6" Grid.Column="4" Text="3"></Label>
+                    <Label Grid.Row="6" Grid.Column="5" Text="4"></Label>
+                    <Label Grid.Row="6" Grid.Column="6" Text="5"></Label>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -9,6 +9,7 @@
     xmlns:bsheet="clr-namespace:UraniumApp.Pages.BottomSheets"
     xmlns:backdrop="clr-namespace:UraniumApp.Pages.Backdrops"
     xmlns:dataGrid="clr-namespace:UraniumApp.Pages.DataGrids"
+    xmlns:calendar="clr-namespace:UraniumApp.Pages.Calendar"
     xmlns:tabs="clr-namespace:UraniumApp.Pages.TabViews"
     Shell.FlyoutBehavior="{OnIdiom Desktop=Locked, Default=Flyout}">
 
@@ -56,6 +57,13 @@
             Title="TreeView" 
             Icon="{FontImageSource FontFamily=MaterialOutlined, Glyph={x:Static m:MaterialOutlined.List_alt}, Color={StaticResource Primary}}"
             ContentTemplate="{DataTemplate pages:TreeViewPage}"/>
+
+        <ShellContent Title="Calendar" ContentTemplate="{DataTemplate calendar:SimpleCalendarPage}">
+            <ShellContent.Icon>
+                <FontImageSource FontFamily="MaterialOutlined" Glyph="{x:Static m:MaterialOutlined.Calendar_month}" Color="{StaticResource Primary}" />
+            </ShellContent.Icon>
+        </ShellContent>
+        
     </FlyoutItem>
 
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
